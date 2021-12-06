@@ -238,30 +238,30 @@ void user_manage()
 
             switch (j) {
             case 0:
-                printf("¿Ïº®ÇÑ ºĞ»ê ÅõÀÚÀÔ´Ï´Ù.\n");
+                printf("ì™„ë²½í•œ ë¶„ì‚° íˆ¬ìì…ë‹ˆë‹¤.\n");
                 break;
             case 1:
-                printf("ÁÁÀº ºĞ»ê ÅõÀÚÀÔ´Ï´Ù.\n");
+                printf("ì¢‹ì€ ë¶„ì‚° íˆ¬ìì…ë‹ˆë‹¤.\n");
                 break;
             case 2:
-                printf("ºĞ»ê ÅõÀÚ ÀÔ¹®À» È¯¿µÇÕ´Ï´Ù.\n");
+                printf("ë¶„ì‚° íˆ¬ì ì…ë¬¸ì„ í™˜ì˜í•©ë‹ˆë‹¤.\n");
                 break;
             case 3:
-                printf("ºĞ»ê ÅõÀÚ°¡ ÇÊ¿äÇÏ½Ç ¼öµµ ÀÖ½À´Ï´Ù.\n");
+                printf("ë¶„ì‚° íˆ¬ìê°€ í•„ìš”í•˜ì‹¤ ìˆ˜ë„ ìˆìŠµë‹ˆë‹¤.\n");
                 break;
             case 4:
-                printf("ºĞ»ê ÅõÀÚ¸¦ ÇÏÁö ¾ÊÀ¸¸é Àç»ê Á¾·ù¿¡ µû¶ó À§ÇèÀÌ ÀÖÀ» ¼ö ÀÖ½À´Ï´Ù.\n");
+                printf("ë¶„ì‚° íˆ¬ìë¥¼ í•˜ì§€ ì•Šìœ¼ë©´ ì¬ì‚° ì¢…ë¥˜ì— ë”°ë¼ ìœ„í—˜ì´ ìˆì„ ìˆ˜ ìˆìŠµë‹ˆë‹¤.\n");
                 if (avg < atoi(user_manage->coin))
-                    printf("ÄÚÀÎÀº º¯µ¿¼ºÀÌ Ä¿¼­ À§ÇèÇÕ´Ï´Ù.!!\n");
+                    printf("ì½”ì¸ì€ ë³€ë™ì„±ì´ ì»¤ì„œ ìœ„í—˜í•©ë‹ˆë‹¤.!!\n");
                 else if (avg < atoi(user_manage->stock))
-                    printf("ÁÖ½ÄÀº º¯µ¿¼ºÀÌ Ä¿¼­ À§ÇèÇÕ´Ï´Ù.!!\n");
+                    printf("ì£¼ì‹ì€ ë³€ë™ì„±ì´ ì»¤ì„œ ìœ„í—˜í•©ë‹ˆë‹¤.!!\n");
                 break;
             case 5:
-                printf("ºĞ»ê ÅõÀÚ¸¦ ÇÏÁö ¾ÊÀ¸¸é ¸Å¿ì À§ÇèÇÕ´Ï´Ù.\n");
+                printf("ë¶„ì‚° íˆ¬ìë¥¼ í•˜ì§€ ì•Šìœ¼ë©´ ë§¤ìš° ìœ„í—˜í•©ë‹ˆë‹¤.\n");
                 if (avg < atoi(user_manage->coin))
-                    printf("ÄÚÀÎÀº º¯µ¿¼ºÀÌ Ä¿¼­ À§ÇèÇÕ´Ï´Ù.!!\n");
+                    printf("ì½”ì¸ì€ ë³€ë™ì„±ì´ ì»¤ì„œ ìœ„í—˜í•©ë‹ˆë‹¤.!!\n");
                 else if (avg < atoi(user_manage->stock))
-                    printf("ÁÖ½ÄÀº º¯µ¿¼ºÀÌ Ä¿¼­ À§ÇèÇÕ´Ï´Ù.!!\n");
+                    printf("ì£¼ì‹ì€ ë³€ë™ì„±ì´ ì»¤ì„œ ìœ„í—˜í•©ë‹ˆë‹¤.!!\n");
                 break;
             case 6:
                 printf("finance error");
@@ -269,24 +269,24 @@ void user_manage()
             }
             if (20 <= atoi(user_manage->age) && 30 > atoi(user_manage->age))
                 if (flex > 0.5)
-                    printf("¼ÒºñÁö¼ö°¡ ³ô½À´Ï´Ù.\n °ú¼ÒºñÁßÀÔ´Ï´Ù.\n");
+                    printf("ì†Œë¹„ì§€ìˆ˜ê°€ ë†’ìŠµë‹ˆë‹¤.\n ê³¼ì†Œë¹„ì¤‘ì…ë‹ˆë‹¤.\n");
                 else
-                    printf("¼Òºñ½À°ü¿¡ Å« ¹®Á¦´Â ¾ø½À´Ï´Ù.\n");
+                    printf("ì†Œë¹„ìŠµê´€ì— í° ë¬¸ì œëŠ” ì—†ìŠµë‹ˆë‹¤.\n");
             if (30 <= atoi(user_manage->age) && 40 > atoi(user_manage->age))
                 if (flex > 0.7)
-                    printf("¼ÒºñÁö¼ö°¡ ³ô½À´Ï´Ù.\n °ú¼ÒºñÁßÀÔ´Ï´Ù.\n");
+                    printf("ì†Œë¹„ì§€ìˆ˜ê°€ ë†’ìŠµë‹ˆë‹¤.\n ê³¼ì†Œë¹„ì¤‘ì…ë‹ˆë‹¤.\n");
                 else
-                    printf("¼Òºñ½À°ü¿¡ Å« ¹®Á¦´Â ¾ø½À´Ï´Ù.\n");
+                    printf("ì†Œë¹„ìŠµê´€ì— í° ë¬¸ì œëŠ” ì—†ìŠµë‹ˆë‹¤.\n");
             if (40 <= atoi(user_manage->age) && 50 > atoi(user_manage->age))
                 if (flex > 0.8)
-                    printf("¼ÒºñÁö¼ö°¡ ³ô½À´Ï´Ù.\n °ú¼ÒºñÁßÀÔ´Ï´Ù.\n");
+                    printf("ì†Œë¹„ì§€ìˆ˜ê°€ ë†’ìŠµë‹ˆë‹¤.\n ê³¼ì†Œë¹„ì¤‘ì…ë‹ˆë‹¤.\n");
                 else
-                    printf("¼Òºñ½À°ü¿¡ Å« ¹®Á¦´Â ¾ø½À´Ï´Ù.\n");
+                    printf("ì†Œë¹„ìŠµê´€ì— í° ë¬¸ì œëŠ” ì—†ìŠµë‹ˆë‹¤.\n");
             if (50 <= atoi(user_manage->age))
                 if (flex > 0.8)
-                    printf("¼ÒºñÁö¼ö°¡ ³ô½À´Ï´Ù.\n °ú¼ÒºñÁßÀÔ´Ï´Ù.\n");
+                    printf("ì†Œë¹„ì§€ìˆ˜ê°€ ë†’ìŠµë‹ˆë‹¤.\n ê³¼ì†Œë¹„ì¤‘ì…ë‹ˆë‹¤.\n");
                 else
-                    printf("¼Òºñ½À°ü¿¡ Å« ¹®Á¦´Â ¾ø½À´Ï´Ù.\n");
+                    printf("ì†Œë¹„ìŠµê´€ì— í° ë¬¸ì œëŠ” ì—†ìŠµë‹ˆë‹¤.\n");
 
 
         }
@@ -316,12 +316,41 @@ void reset()
         }
     
 }
+void SaveFile() {
+    property* curr = head;
+    int i, state;
+    FILE* fp = fopen("Data.txt", "wt");
+    if (fp == NULL) {
+        printf("File open error!\n");
+        return -1;
+    }
+    while (curr != NULL){
+        fprintf(fp, "no: %d, name: %s\n", curr->no, curr->name);
+        fprintf(fp, "age: %s, phone: %s\n", curr->age, curr->phone);
+        fprintf(fp, "house: %s car: %s\n", curr->house, curr->car);
+        fprintf(fp, "stock: %s coin: %s\n", curr->stock, curr->coin);
+        fprintf(fp, "land: %s dollar: %s\n", curr->land, curr->dollar);
+        fprintf(fp, "bank: %s annual_salary: %s\n", curr->bank, curr->annual_salary);
+        fprintf(fp, "save: %s\n", curr->save);
+        fputc('\n', fp);
+        curr = curr->link;
+    }
+    state = fclose(fp);
+    if (state != 0) {
+        printf("File Close Error!\n");
+        return -1;
+    }
+    printf("		Data Save\n");
+    return 0;
+ }
+    
+
 void menu()
 {
     int input;
 
     printf("***** MENU *****\n");
-    printf("1. Ãß°¡\n2. »èÁ¦\n3. °Ë»ö\n4. µ¥ÀÌÅÍ Ãâ·Â\n5. ÀÚ»ê °ü¸®\n6. ÃÊ±âÈ­\n");
+    printf("1. ì¶”ê°€\n2. ì‚­ì œ\n3. ê²€ìƒ‰\n4. ë°ì´í„° ì¶œë ¥\n5. ìì‚° ê´€ë¦¬\n6. ì´ˆê¸°í™”\n7. ì €ì¥\n");
     printf("what's your choice?: ");
     scanf("%d", &input);
     switch (input) {
@@ -350,7 +379,8 @@ void menu()
             menu();
             break;
         case 7:
-            printf("Error. Retry!\n");
+            SaveFile();
+            menu();
             break;
     }
 }

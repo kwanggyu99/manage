@@ -1,0 +1,11 @@
+all: pp
+
+pp: main.o a.o 
+    gcc -o pp main.c a.c
+
+main: main.o
+    gcc -c main.c
+
+a: a.o
+    gcc -c a.c
+
